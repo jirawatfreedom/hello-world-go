@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/jirawatfreedom/hello-world-go"
+)
 
 type Person struct {
 	firstName string
@@ -79,6 +83,8 @@ func main() {
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
+
+	fmt.Println(color.getRed())
 
 }
 func printSlice(s string, x []string) {
